@@ -4,7 +4,7 @@ AFAD Event Web Service Earthquake Data Download Package
 
 
 <p align="justify">
-Bu paketin amacı; Acil ve Afet  Durum Yönetim Başkanlığının (AFAD) sunmakta olduğu Deprem Web Servisi aracılığı ile dağıtımı yapılan deprem katalog verilerinin istatistik hesaplama ve grafik yazılımına aktarınını kolaylaştırmak ve açıklayıcı veri analizine yönelik bazı temel istatistiklerin grafiklerin hızlıca elde edilebilmesini sağlamaktır.
+Bu paketin amacı; Acil ve Afet  Durum Yönetim Başkanlığının (AFAD) sunmakta olduğu Deprem Web Servisi aracılığı ile dağıtımı yapılan deprem katalog verilerinin istatistik hesaplama ve grafik yazılımı R'ye aktarınını kolaylaştırmak ve açıklayıcı veri analizine yönelik bazı temel istatistiklerin grafiklerin hızlıca elde edilebilmesini sağlamaktır.
 Paket içeriği an itibari 10 ögeden oluşmaktadır:
 
 Fonksiyon | Açıklama
