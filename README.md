@@ -14,8 +14,8 @@ calc.StDevEllipse	 |	Standart elipsi hesaplar.
 calc.StDistance |	Standard uzaklığı hesaplar.
 histog.depth |	İndirilen deprem verisi için hızlı deprem derinliği	histogramı çizer.
 histog.magni |	İndirilen deprem verisi için hızlı deprem büyüklüğü	histogramı çizer.
-map.AFAD	|	maps paketti ile indirilen deprem verisinin haritaaını çizer.
-opensmap.AFAD |	OpenStreetMap paketti ile indirilen deprem verisinin haritaaını çizer.
+map.AFAD	|	maps paketti ile indirilen deprem verisinin haritalar.
+opensmap.AFAD |	OpenStreetMap paketti ile indirilen deprem verisini haritalar.
 read.AFAD	|	AFAD Deprem Web Servisinden deprem verisi çeker.
 turkiye.cities |	Türkiye illerine ilişkin enlem, boylam bilgisini örnekler.
 </p>
