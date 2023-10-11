@@ -58,6 +58,27 @@ histog.magni(equake,title="Eylül 2023 - Deprem Büyüklük Dağılımı")
 ![Deprem Derinlik Dağılımı](https://github.com/lterlemez/AFAD_Package/assets/99257171/f85bc9d5-db95-4482-9d2e-ad6ad791bf12)
 ![Deprem Büyüklük Dağılımı](https://github.com/lterlemez/AFAD_Package/assets/99257171/1d342980-8e66-4e28-b0ec-ab291132bd92)
 
+## Dikdörtgen Arama Örneği
+```R
+equake<-read.AFAD(start="1990-01-01T12:00:00",end="2023-01-02T12:00:00",minlat=39,maxlat=42,minlon=26,maxlon=42,orderby ="magnitude",minmag=4)
+#RDS dosyası için https://gadm.org/old_versions.html linki üzerinden versiyon 3.6'yı seçerek ulaşılabilir.
+map.AFAD(equake,"gadm36_TUR_0_sp.rds")
+opensmap.AFAD(equake,gap=.5,title="Box Search Plot",xlab="Boylam",ylab="Enlem",minnumtiles = 10); 
+histog.depth(equake,col="grey",fill = "black")
+histog.magni(equake,col="blue",fill = "black")
+c.mean<-calc.meanCenter(equake,type="mean")
+stdis<-calc.StDistance(equake)
+stdev<-calc.StDevEllipse(equake,addplt=TRUE,plt=p)
+# Takip eden grafik çizimi için ggforce paketi gerekmektedir.
+library(ggforce)
+p<-opensmap.AFAD(equake,gap=.5,minnumtiles=10)
+p+geom_point(color="red",aes(x=c.mean[,1],y=c.mean[,2]))
++geom_circle(aes(x0=c.mean[,1], y0=c.mean[,2], r=calc.StDistance(equake)), inherit.aes=FALSE)
++geom_ellipse(color="red",aes(x0=c.mean[,1],y0=c.mean[,2],angle=stdev$rot,a=stdev$A,b=stdev$B))
+#Deprem büyüklüğü 5'in üzerinde olan depremlerin şiddetlerinin harita üzerinde gösterilmesi
+eqmag<-equake[which(equake$magnitude>5),]
+opensmap.AFAD(equake,gap=.5,title="Box Search Plot",xlab="Boylam",ylab="Enlem",minnumtiles = 10)+ geom_text(data=eqmag,aes(longitude,latitude,label=magnitude),color="red")
+```
 
 <p align="justify">
 </p>
