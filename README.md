@@ -55,6 +55,9 @@ opensmap.AFAD(equake,gap=.5,title="Standart Arama Deprem Haritası",subtitle="Sa
 histog.depth(equake,title="Eylül 2023 - Deprem Derinlik Dağılımı")
 histog.magni(equake,title="Eylül 2023 - Deprem Büyüklük Dağılımı")
 ```
+![OpenStreeMap Deprem Haritası](https://github.com/lterlemez/AFAD_Package/assets/99257171/6ee7076e-3444-46be-9fa4-5fc90573f9ac)
+![Deprem Derinlik Dağılımı](https://github.com/lterlemez/AFAD_Package/assets/99257171/f85bc9d5-db95-4482-9d2e-ad6ad791bf12)
+![Deprem Büyüklük Dağılımı](https://github.com/lterlemez/AFAD_Package/assets/99257171/1d342980-8e66-4e28-b0ec-ab291132bd92)
 
 
 <p align="justify">
