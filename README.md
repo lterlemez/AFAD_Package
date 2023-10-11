@@ -1,5 +1,4 @@
-# AFAD_Package
-AFAD Event Web Service Earthquake Data Download Package
+# AFAD Event Web Service Earthquake Data Download Package: AFADEarthQuakeData
 
 
 
