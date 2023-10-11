@@ -75,7 +75,7 @@ p<-opensmap.AFAD(equake,gap=.5,minnumtiles=10)
 p+geom_point(color="red",aes(x=c.mean[,1],y=c.mean[,2]))
 +geom_circle(aes(x0=c.mean[,1], y0=c.mean[,2], r=calc.StDistance(equake)), inherit.aes=FALSE)
 +geom_ellipse(color="red",aes(x0=c.mean[,1],y0=c.mean[,2],angle=stdev$rot,a=stdev$A,b=stdev$B))
-#Deprem büyüklüğü 5'in üzerinde olan depremlerin şiddetlerinin harita üzerinde gösterilmesi
+#Deprem büyüklüğü 5'in üzerinde olan depremlerin şiddetlerinin harita üzerinde metin şeklinde gösterilmesi
 eqmag<-equake[which(equake$magnitude>5),]
 opensmap.AFAD(equake,gap=.5,title="Box Search Plot",xlab="Boylam",ylab="Enlem",minnumtiles = 10)+ geom_text(data=eqmag,aes(longitude,latitude,label=magnitude),color="red")
 ```
