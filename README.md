@@ -3,7 +3,7 @@
 
 
 <p align="justify">
-Bu paketin amacı; Acil ve Afet  Durum Yönetim Başkanlığının (AFAD) sunmakta olduğu Deprem Web Servisi aracılığı ile dağıtımı yapılan deprem katalog verilerinin istatistik hesaplama ve grafik yazılımı R'ye aktarınını kolaylaştırmak ve açıklayıcı veri analizine yönelik bazı temel istatistiklerin grafiklerin hızlıca elde edilebilmesini sağlamaktır.
+Bu paketin amacı; <i><b>Acil ve Afet  Durum Yönetim Başkanlığının</b></i> (AFAD) sunmakta olduğu <a href="https://deprem.afad.gov.tr/event-service" style="text-decoration:none;">Deprem Web Servisi</a> aracılığı ile dağıtımı yapılan deprem katalog verilerinin istatistik hesaplama ve grafik yazılımı R'ye aktarınını kolaylaştırmak ve açıklayıcı veri analizine yönelik bazı temel istatistiklerin grafiklerin hızlıca elde edilebilmesini sağlamaktır.
 Paket içeriği an itibari 10 ögeden oluşmaktadır:
 
 Fonksiyon | Açıklama
@@ -46,7 +46,7 @@ Diğer bir örnek de belli bir zaman aralığını kapsayacak şeklinde deprem v
 #6 Türkiye 2023-09-01T00:54:51  3.34 Bahçesaray  601273   38.104     Bahçesaray (Van)    42.702       2.1     Ulubeyli      Van 0.63   ML         false    
 ```
 <p align="justify">
-AFAD Deprem Web Servisinden indirilen veri hızlı bir şekilde haritalandırılmak ve deprem derinlik ve büyüklük dağılımları hızlı bir şekilde görselleştirilmek istenir ise sırası ile *map.AFAD* ve/veya *opensmap.AFAD*, *histog.depth* ve *histog.magni* fonksiyonlarından yararlanılabilir.
+AFAD Deprem Web Servisinden indirilen veri hızlı bir şekilde haritalandırılmak ve deprem derinlik ve büyüklük dağılımları hızlı bir şekilde görselleştirilmek istenir ise sırası ile <strong>map.AFAD</strong> ve/veya <strong>opensmap.AFAD</strong>, <strong>histog.depth</strong> ve <strong>histog.magni</strong> fonksiyonlarından yararlanılabilir.
 </p>
 
 ```R
@@ -54,11 +54,19 @@ opensmap.AFAD(equake,gap=.5,title="Standart Arama Deprem Haritası",subtitle="Sa
 histog.depth(equake,title="Eylül 2023 - Deprem Derinlik Dağılımı")
 histog.magni(equake,title="Eylül 2023 - Deprem Büyüklük Dağılımı")
 ```
-![OpenStreeMap Deprem Haritası](https://github.com/lterlemez/AFAD_Package/assets/99257171/6ee7076e-3444-46be-9fa4-5fc90573f9ac)
-![Deprem Derinlik Dağılımı](https://github.com/lterlemez/AFAD_Package/assets/99257171/f85bc9d5-db95-4482-9d2e-ad6ad791bf12)
-![Deprem Büyüklük Dağılımı](https://github.com/lterlemez/AFAD_Package/assets/99257171/1d342980-8e66-4e28-b0ec-ab291132bd92)
+<p>
+<img src="https://github.com/lterlemez/AFAD_Package/assets/99257171/6ee7076e-3444-46be-9fa4-5fc90573f9ac" width=50% height=50%, title="OpenStreetMap ile Deprem Haritalama">
+</p>
+<img src="https://github.com/lterlemez/AFAD_Package/assets/99257171/f85bc9d5-db95-4482-9d2e-ad6ad791bf12" width="500" title="Deprem Derinlik Dağılımı">
+<img src="https://github.com/lterlemez/AFAD_Package/assets/99257171/1d342980-8e66-4e28-b0ec-ab291132bd92" width="500" title="Deprem Büyüklük Dağılımı">
+
+<!-- ![Deprem Derinlik Dağılımı](https://github.com/lterlemez/AFAD_Package/assets/99257171/f85bc9d5-db95-4482-9d2e-ad6ad791bf12|width=200)
+![Deprem Büyüklük Dağılımı](https://github.com/lterlemez/AFAD_Package/assets/99257171/1d342980-8e66-4e28-b0ec-ab291132bd92|width=200) -->
 
 ## Dikdörtgen Arama Örneği
+
+Bu örnekte, **map.AFAD** fonksiyonu ile kullanılmakta olan __RDS__ harita dosyası için <a href="https://gadm.org/old_versions.html" style="text-decoration:none;">Old GADM data</a> linki üzerinden versiyon 3.6'yı seçerek ulaşılabilir.
+
 ```R
 equake<-read.AFAD(start="1990-01-01T12:00:00",end="2023-01-02T12:00:00",minlat=39,maxlat=42,minlon=26,maxlon=42,orderby ="magnitude",minmag=4)
 #RDS dosyası için https://gadm.org/old_versions.html linki üzerinden versiyon 3.6'yı seçerek ulaşılabilir.
