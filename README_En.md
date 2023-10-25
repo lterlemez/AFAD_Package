@@ -63,7 +63,7 @@ histog.magni(equake,title="Eylül 2023 - Deprem Büyüklük Dağılımı")
 
 ## Box Search Example
 <div align="justify">
-In this example, the <b>RDS</b> map file being used with the <b>map.AFAD></b> function can be accessed by selecting version 3.6 from the <a href="https://gadm.org/old_versions.html" style="text-decoration:none;">Old GADM data</a> link.
+In this example, the <b>RDS</b> map file being used with the <b>map.AFAD</b> function can be accessed by selecting version 3.6 from the <a href="https://gadm.org/old_versions.html" style="text-decoration:none;">Old GADM data</a> link.
 </div>
 
 ```R
