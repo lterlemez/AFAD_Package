@@ -1,7 +1,7 @@
 # AFAD Event Web Service Earthquake Data Download Package: AFADEarthQuakeData
 
 <p align="justify">
-The purpose of this package is to facilitate the transfer of earthquake catalog data distributed through the <a href="https://deprem.afad.gov.tr/event-service" style="text-decoration:none;">Event Web Service</a> offered by the <i><b>Emergency and Disaster Management Authority</b></i> (AFAD) to R, the statistical calculation and graphics software, and to quickly obtain some basic statistics and graphics for descriptive data analysis.<br/>
+The purpose of this package is to enable the transfer of earthquake catalog data distributed through the <a href="https://deprem.afad.gov.tr/event-service" style="text-decoration:none;">Event Web Service</a> offered by the <i><b>Emergency and Disaster Management Authority</b></i> (AFAD) to R, the statistical calculation and graphics software, and to quickly obtain some basic statistics and graphics for descriptive data analysis.<br/>
 The package content currently consists of 10 items:
 
 Function | Explanation
@@ -18,7 +18,7 @@ read.AFAD	|	Retrieves earthquake data from AFAD Earthquake Web Service.
 turkiye.cities |	Provides latitude and longitude information for the provinces of Turkey.
 </p>
 
-For exanple, properties for an earthquake with a known _eventID_ can be retrieved from the Web Service.
+For example, properties for an earthquake with a known _eventID_ can be retrieved from the Web Service.
 
 ```R
   equake<-read.AFAD(eventid=512359)
