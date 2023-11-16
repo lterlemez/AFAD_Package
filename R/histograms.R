@@ -27,7 +27,7 @@ histog.depth<-function(eqdata,bins=NULL,col=NULL,fill=NULL,title=NULL,caption=NU
     if(is.null(col)) col="black"
     if(is.null(fill)) fill="white"
     
-    ggplot(equake,aes(depth))+geom_histogram(bins=bins,color=col,fill=fill)+labs(title=title,x=xlabel,y=ylabel)+theme_classic()
+    ggplot(equake,aes(depth))+geom_histogram(bins=bins,color=col,fill=fill)+labs(title=title,caption=caption,x=xlabel,y=ylabel)+theme_classic()
   }
 
 #' Quick histogram of magnitude of downloaded earthquake data 
@@ -59,5 +59,5 @@ histog.magni<-function(eqdata,bins=NULL,col=NULL,fill=NULL,title=NULL,caption=NU
   if(is.null(col)) col="black"
   if(is.null(fill)) fill="white"
   
-  ggplot(equake,aes(magnitude))+geom_histogram(bins=bins,color=col,fill=fill)+labs(title=title,x=xlabel,y=ylabel)+theme_classic()
+  ggplot(equake,aes(magnitude))+geom_histogram(bins=bins,color=col,fill=fill)+labs(title=title,caption=caption,x=xlabel,y=ylabel)+theme_classic()
 }
