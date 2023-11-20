@@ -1,18 +1,23 @@
-#' Turkish Cities' Longitude and Latitude Data
+#' Turkiye and Neighborhood Gazetteer
 #' 
-#' A small dataset containing of longitude and latitude data of 81 cities of Turkiye.
+#' This gazetteer provides a base map layer that may be used to find locations by their proper name anywhere around Turkey.
+#' The categories include airports, coastal features, drainage features, land features, islands, sea features, political features, and populated places.
+#' The coordinates of the bounding box from west to east bounding longitudes and from north to south bounding latitudes	are 25, 45, 43 and 35, respectively.
 #' 
-#' @name turkiye.cities
-#' @description A small dataset containing of longitude and latitude data of 81 cities of Turkiye.
+#' @name turkiye_and_neighborhood_gazetteer
+#' @description A gazetteer represents the locations and proper names for map features around the Turkey and neighborhood.
 #' @docType data
-#' @references \url{http://www.beycan.net/1057/illerin-enlem-ve-boylamlari.html}
+#' @references \url{https://www.harita.gov.tr/urunler/indirilebilir-verilerdosyalar/13}
 #' @keywords dataset
 #' @format  
-#' A data frame with 81 rows and 3 columns:
+#' A data frame with 53125 rows and 6 columns:
 #' \describe{
-#'   \item{City}{City's name}
-#'   \item{Latitude}{City's latitude}
-#'   \item{Longitude}{City's longitude}
+#'   \item{FID}{The OID of the feature}
+#'   \item{NAME}{Approved name of the feature}
+#'   \item{LONGITUDE}{Geographic coordinate's longitude of the feature}
+#'   \item{LATITUDE}{Geographic coordinate's latitude of the feature}
+#'   \item{TYPE}{Geographic type of the feature}
+#'   \item{JOG.SHEET}{JOG sheet number in which the feature resides.}
 #' }
 #' 
-"turkiye.cities"
+"turkiye_and_neighborhood_gazetteer"
