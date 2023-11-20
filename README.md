@@ -15,7 +15,7 @@ histog.magni |	İndirilen deprem verisi için hızlı deprem büyüklüğü	hist
 map.AFAD	|	maps paketi ile indirilen deprem verisinin haritalar.
 opensmap.AFAD |	OpenStreetMap paketi ile indirilen deprem verisini haritalar.
 read.AFAD	|	AFAD Deprem Web Servisinden deprem verisi çeker.
-turkiye.cities |	Türkiye illerine ilişkin enlem, boylam bilgisini örnekler.
+turkiye_and_neighborhood_gazetteer |	Türkiye ve Çevresi Coğrafi Ad Dizini (CAD)
 </p>
 
 Örneğin, _eventID_'si bilinen bir depreme ilişkin özellikler, Web Servisinden çekilebilir.
