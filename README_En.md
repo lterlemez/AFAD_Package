@@ -15,7 +15,7 @@ histog.magni |	Draws a fast earthquake magnitude histogram for downloaded earthq
 map.AFAD	|	maps of earthquake data downloaded with the maps package.
 opensmap.AFAD |	Maps earthquake data downloaded with the OpenStreetMap package.
 read.AFAD	|	Retrieves earthquake data from AFAD Earthquake Web Service.
-turkiye.cities |	Provides latitude and longitude information for the provinces of Turkey.
+turkiye_and_neighborhood_gazetteer |	Türkiye and Neighborhood Gazetteer.
 </p>
 
 For example, properties for an earthquake with a known _eventID_ can be retrieved from the Web Service.
