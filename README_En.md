@@ -86,3 +86,5 @@ p+geom_point(color="red",aes(x=c.mean[,1],y=c.mean[,2]))
 eqmag<-equake[which(equake$magnitude>5),]
 opensmap.AFAD(equake,gap=.5,title="Box Search Plot",xlab="Boylam",ylab="Enlem",minnumtiles = 10)+ geom_text(data=eqmag,aes(longitude,latitude,label=magnitude),color="red")
 ```
+
+İçöz, C., & Terlemez, L. (t.y.). AFAD Deprem Veri ve Görselleştirmelerine İlişkin Bir R Paketi: AFADEarthQuakeData. Türk Deprem Araştırma Dergisi. https://doi.org/10.46464/tdad.1375464
