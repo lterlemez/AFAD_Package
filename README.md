@@ -1,4 +1,4 @@
-# AFAD Event Web Service Earthquake Data Download Package: AFADEarthQuakeData
+# AFAD Event Web Service Earthquake Data Download Package: AFADEarthQuakeData[^1]
 
 <p align="justify">
 Bu paketin amacı; <i><b>Acil ve Afet  Durum Yönetim Başkanlığının</b></i> (AFAD) sunmakta olduğu <a href="https://deprem.afad.gov.tr/event-service" style="text-decoration:none;">Deprem Web Servisi</a> aracılığı ile dağıtımı yapılan deprem katalog verilerinin istatistik hesaplama ve grafik yazılımı R'ye aktarınını kolaylaştırmak ve açıklayıcı veri analizine yönelik bazı temel istatistiklerin grafiklerin hızlıca elde edilebilmesini sağlamaktır.
@@ -86,6 +86,6 @@ eqmag<-equake[which(equake$magnitude>5),]
 opensmap.AFAD(equake,gap=.5,title="Box Search Plot",xlab="Boylam",ylab="Enlem",minnumtiles = 10)+ geom_text(data=eqmag,aes(longitude,latitude,label=magnitude),color="red")
 ```
 
-İçöz, C., & Terlemez, L. (t.y.). AFAD Deprem Veri ve Görselleştirmelerine İlişkin Bir R Paketi: AFADEarthQuakeData. Türk Deprem Araştırma Dergisi. https://doi.org/10.46464/tdad.1375464
+[^1]: İçöz, C., & Terlemez, L. (2024). AFAD Deprem Veri ve Görselleştirmelerine İlişkin Bir R Paketi: AFADEarthQuakeData. Türk Deprem Araştırma Dergisi. https://doi.org/10.46464/tdad.1375464
 <p align="justify">
 </p>
