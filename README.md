@@ -89,6 +89,6 @@ opensmap.AFAD(equake,gap=.5,title="Box Search Plot",xlab="Boylam",ylab="Enlem",m
 
 
 [^1]: İçöz, C., & Terlemez, L. (2024). AFAD Deprem Veri ve Görselleştirmelerine İlişkin Bir R Paketi: AFADEarthQuakeData. Türk Deprem Araştırma Dergisi. https://doi.org/10.46464/tdad.1375464
-[^2]: AFAD tarafından yapılan son değişiklik nedeni ile maalesef eski deprem verilerine artık ulaşılamamaktadır. Şu an itibari ile Deprem Web Servis sadece son 5 gün'e ayıp deprem olaylarına ilişkin veriyi sağlamaktadır.
+[^2]: AFAD tarafından yapılan son değişiklik nedeni ile maalesef eski deprem verilerine artık ulaşılamamaktadır. Şu an itibari ile Deprem Web Servis sadece son 5 gün'e ayıp deprem olaylarına ilişkin veriyi sağlamaktadır. Örnek hata sonucunu görmek için https://deprem.afad.gov.tr/apiv2/event/filter?start=2020-09-14%2010:00:00&end=2021-09-16%2010:00:00&format=xml linkinden yararlanabilirsiniz.
 <p align="justify">
 </p>
