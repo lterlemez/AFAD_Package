@@ -1,4 +1,4 @@
-# AFAD Event Web Service Earthquake Data Download Package: AFADEarthQuakeData[^1]
+# AFAD Event Web Service Earthquake Data Download Package: AFADEarthQuakeData[^1][^2]
 
 <p align="justify">
 The purpose of this package is to enable the transfer of earthquake catalog data distributed through the <a href="https://deprem.afad.gov.tr/event-service" style="text-decoration:none;">Event Web Service</a> offered by the <i><b>Emergency and Disaster Management Authority</b></i> (AFAD) to R, the statistical calculation and graphics software, and to quickly obtain some basic statistics and graphics for descriptive data analysis.<br/>
@@ -88,4 +88,4 @@ opensmap.AFAD(equake,gap=.5,title="Box Search Plot",xlab="Boylam",ylab="Enlem",m
 ```
 
 [^1]: İçöz, C., & Terlemez, L. (2024). AFAD Deprem Veri ve Görselleştirmelerine İlişkin Bir R Paketi: AFADEarthQuakeData. Türk Deprem Araştırma Dergisi. https://doi.org/10.46464/tdad.1375464
-
+[^2]: Unfortunately, due to the recent changes made by AFAD, old earthquake data is no longer available. As of now, Event Web Service only provides data on earthquake events for the last 5 days.
