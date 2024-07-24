@@ -95,4 +95,4 @@ install_github("lterlemez/AFAD_Package")
 
 
 [^1]: İçöz, C., & Terlemez, L. (2024). AFAD Deprem Veri ve Görselleştirmelerine İlişkin Bir R Paketi: AFADEarthQuakeData. Türk Deprem Araştırma Dergisi. https://doi.org/10.46464/tdad.1375464
-[^2]: Unfortunately, due to the recent changes made by AFAD, old earthquake data is no longer available. As of now, Event Web Service only provides data on earthquake events for the last 5 days.  You can use the link https://deprem.afad.gov.tr/apiv2/event/filter?start=2020-09-14%2010:00:00&end=2021-09-16%2010:00:00&format=xml to see the sample error result.
+[^2]: Unfortunately, due to the recent changes made by AFAD, old earthquake data is no longer available. As of now, Event Web Service only provides data on earthquake events for the last 5 days.  You can use the link https://deprem.afad.gov.tr/apiv2/event/filter?start=2020-09-14%2010:00:00&end=2021-09-16%2010:00:00&format=xml to see the error result as an example.
