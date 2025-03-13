@@ -1,4 +1,4 @@
-# AFAD Event Web Service Earthquake Data Download Package: AFADEarthQuakeData[^1][^2]
+# AFAD Event Web Service Earthquake Data Download Package: AFADEarthQuakeData[^1] <!--[^2]-->
 
 <p align="justify">
 Bu paketin amacı; <i><b>Acil ve Afet  Durum Yönetim Başkanlığının</b></i> (AFAD) sunmakta olduğu <a href="https://deprem.afad.gov.tr/event-service" style="text-decoration:none;">Deprem Web Servisi</a> aracılığı ile dağıtımı yapılan deprem katalog verilerinin istatistik hesaplama ve grafik yazılımı R'ye aktarınını kolaylaştırmak ve açıklayıcı veri analizine yönelik bazı temel istatistiklerin grafiklerin hızlıca elde edilebilmesini sağlamaktır.
