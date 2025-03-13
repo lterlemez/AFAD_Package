@@ -1,4 +1,4 @@
-# AFAD Event Web Service Earthquake Data Download Package: AFADEarthQuakeData[^1][^2]
+# AFAD Event Web Service Earthquake Data Download Package: AFADEarthQuakeData[^1] <!--[^2]-->
 
 <p align="justify">
 The purpose of this package is to enable the transfer of earthquake catalog data distributed through the <a href="https://deprem.afad.gov.tr/event-service" style="text-decoration:none;">Event Web Service</a> offered by the <i><b>Emergency and Disaster Management Authority</b></i> (AFAD) to R, the statistical calculation and graphics software, and to quickly obtain some basic statistics and graphics for descriptive data analysis.<br/>
